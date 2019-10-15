@@ -1,9 +1,9 @@
 import React from "react";
 
-function About() {
+function Landscape() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>Landscape Page</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis molestie urna.
         Aliquam semper ultrices varius. Aliquam faucibus sit amet magna a ultrices. Aenean
@@ -19,4 +19,4 @@ function About() {
   );
 }
 
-export default About;
+export default Landscape;

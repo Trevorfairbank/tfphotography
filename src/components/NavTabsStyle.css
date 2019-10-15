@@ -1,0 +1,10 @@
+.nav-link {
+    color: gray;
+    font-size: 20px;
+    margin-left: 10px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: rgb(29, 26, 23);
+}
