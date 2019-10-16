@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Gallery from '../../Gallery.js'
+import Gallery from '../../Gallery.js';
 
 
 class Home extends React.Component {
@@ -18,8 +18,9 @@ class Home extends React.Component {
                     display: "block",
                     minHeight: "1px",
                     width: "100%",
-                    border: "1px solid #ddd",
-                    overflow: "auto"}}>
+                    border: "0px solid #ddd",
+                    overflow: "auto",
+                    padding: "20px"}}>
                 <Gallery
             images={this.state.images}
             enableImageSelection={false}/>
@@ -45,64 +46,173 @@ Home.propTypes = {
 Home.defaultProps = {
     images: [
         {
-            src: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg",
-            thumbnail: "https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_n.jpg",
-            thumbnailWidth: 240,
-            thumbnailHeight: 320,
-            isSelected: true,
-            caption: "8H (gratisography.com)"
+            src: "https://live.staticflickr.com/65535/48905979066_d8c1f73c30_k.jpg",
+            thumbnail: "https://live.staticflickr.com/65535/48905979066_f7fe89d7ab_z.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "A Young Male Lion at Madikwe Camp In South Africa."
         },
         {
-            src: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg",
-            thumbnail: "https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 190,
-            caption: "286H (gratisography.com)"
+            src: "https://live.staticflickr.com/8883/29348288470_f1ee826166_b.jpg",
+            thumbnail: "https://live.staticflickr.com/8883/29348288470_f1ee826166_n.jpg",
+            thumbnailWidth: 333,
+            thumbnailHeight: 500,
+            caption: "Eiffel Tower at Night"
         },
         {
-            src: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg",
-            thumbnail: "https://c7.staticflickr.com/9/8569/28941134686_d57273d933_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 148,
-            isSelected: true,
-            caption: "315H (gratisography.com)"
+            src: "https://live.staticflickr.com/8167/29557621391_42eff11261_h.jpg",
+            thumbnail: "https://live.staticflickr.com/8167/29557621391_b3b210cf0c.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "Big Island of Hawaii"
         },
         {
-            src: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg",
-            thumbnail: "https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 213,
-            caption: "201H (gratisography.com)"
+            src: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd_b.jpg",
+            thumbnail: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "Lake Tahoe"
         },
         {
-            src: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg",
-            thumbnail: "https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_n.jpg",
-            thumbnailWidth: 248,
-            thumbnailHeight: 320,
-            caption: "Big Ben (Tom Eversley - isorepublic.com)"
+            src: "https://live.staticflickr.com/65535/48906751053_e5ee157d77_b.jpg",
+            thumbnail: "https://live.staticflickr.com/65535/48906751053_e5ee157d77.jpg",
+            thumbnailWidth: 400,
+            thumbnailHeight: 500,
+            caption: "Esteban"
         },
         {
-            src: "https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_b.jpg",
-            thumbnail: "https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 113,
-            caption: "Red Zone - Paris (Tom Eversley - isorepublic.com)"
+            src: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa_b.jpg",
+            thumbnail: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "Lightning over Lake Tahoe"
         },
         {
-            src: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg",
-            thumbnail: "https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_n.jpg",
-            thumbnailWidth: 313,
-            thumbnailHeight: 320,
-            isSelected: true,
-            caption: "Wood Glass (Tom Eversley - isorepublic.com)"
+            src: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+            thumbnail: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "Sylvester the Cheetah"
         },
         {
-            src: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg",
-            thumbnail: "https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg",
-            thumbnailWidth: 320,
-            thumbnailHeight: 213,
-            caption: "Flower Interior Macro (Tom Eversley - isorepublic.com)"
-        }
+            src: "https://live.staticflickr.com/65535/48907528807_4b0dba2463_b.jpg",
+            thumbnail: "https://live.staticflickr.com/65535/48907528807_4b0dba2463.jpg",
+            thumbnailWidth: 500,
+            thumbnailHeight: 333,
+            caption: "Andean Bear"
+        },
+        {
+          src: "https://live.staticflickr.com/65535/48905979066_d8c1f73c30_k.jpg",
+          thumbnail: "https://live.staticflickr.com/65535/48905979066_f7fe89d7ab_z.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "A Young Male Lion at Madikwe Camp In South Africa."
+      },
+      {
+          src: "https://live.staticflickr.com/8883/29348288470_f1ee826166_b.jpg",
+          thumbnail: "https://live.staticflickr.com/8883/29348288470_f1ee826166_n.jpg",
+          thumbnailWidth: 333,
+          thumbnailHeight: 500,
+          caption: "Eiffel Tower at Night"
+      },
+      {
+          src: "https://live.staticflickr.com/8167/29557621391_42eff11261_h.jpg",
+          thumbnail: "https://live.staticflickr.com/8167/29557621391_b3b210cf0c.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "Big Island of Hawaii"
+      },
+      {
+          src: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd_b.jpg",
+          thumbnail: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "Lake Tahoe"
+      },
+      {
+          src: "https://live.staticflickr.com/65535/48906751053_e5ee157d77_b.jpg",
+          thumbnail: "https://live.staticflickr.com/65535/48906751053_e5ee157d77.jpg",
+          thumbnailWidth: 400,
+          thumbnailHeight: 500,
+          caption: "Esteban"
+      },
+      {
+          src: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa_b.jpg",
+          thumbnail: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "Lightning over Lake Tahoe"
+      },
+      {
+          src: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+          thumbnail: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "Sylvester the Cheetah"
+      },
+      {
+          src: "https://live.staticflickr.com/65535/48907528807_4b0dba2463_b.jpg",
+          thumbnail: "https://live.staticflickr.com/65535/48907528807_4b0dba2463.jpg",
+          thumbnailWidth: 500,
+          thumbnailHeight: 333,
+          caption: "Andean Bear"
+      },
+      {
+        src: "https://live.staticflickr.com/65535/48905979066_d8c1f73c30_k.jpg",
+        thumbnail: "https://live.staticflickr.com/65535/48905979066_f7fe89d7ab_z.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "A Young Male Lion at Madikwe Camp In South Africa."
+    },
+    {
+        src: "https://live.staticflickr.com/8883/29348288470_f1ee826166_b.jpg",
+        thumbnail: "https://live.staticflickr.com/8883/29348288470_f1ee826166_n.jpg",
+        thumbnailWidth: 333,
+        thumbnailHeight: 500,
+        caption: "Eiffel Tower at Night"
+    },
+    {
+        src: "https://live.staticflickr.com/8167/29557621391_42eff11261_h.jpg",
+        thumbnail: "https://live.staticflickr.com/8167/29557621391_b3b210cf0c.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "Big Island of Hawaii"
+    },
+    {
+        src: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd_b.jpg",
+        thumbnail: "https://live.staticflickr.com/8290/29348148790_b617bfe3dd.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "Lake Tahoe"
+    },
+    {
+        src: "https://live.staticflickr.com/65535/48906751053_e5ee157d77_b.jpg",
+        thumbnail: "https://live.staticflickr.com/65535/48906751053_e5ee157d77.jpg",
+        thumbnailWidth: 400,
+        thumbnailHeight: 500,
+        caption: "Esteban"
+    },
+    {
+        src: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa_b.jpg",
+        thumbnail: "https://live.staticflickr.com/8255/29348149460_94ec18a5fa.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "Lightning over Lake Tahoe"
+    },
+    {
+        src: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+        thumbnail: "https://live.staticflickr.com/65535/48906188602_2864a6ee49_b.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "Sylvester the Cheetah"
+    },
+    {
+        src: "https://live.staticflickr.com/65535/48907528807_4b0dba2463_b.jpg",
+        thumbnail: "https://live.staticflickr.com/65535/48907528807_4b0dba2463.jpg",
+        thumbnailWidth: 500,
+        thumbnailHeight: 333,
+        caption: "Andean Bear"
+    }
     ]
 };
 
