@@ -378,7 +378,7 @@ Gallery.defaultProps = {
     rowHeight: 320,
     margin: 5,
     enableLightbox: true,
-    backdropClosesModal: false,
+    backdropClosesModal: true,
     currentImage: 0,
     preloadNextImage: true,
     enableKeyboardInput: true,
