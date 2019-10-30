@@ -82,11 +82,11 @@ Product.defaultProps = {
       caption: "Isolated Tidepools by Virgil James"
     },
     {
-      src: "https://live.staticflickr.com/65535/48907291266_ae5cb5dba3_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48907291266_ae5cb5dba3.jpg",
+      src: "https://live.staticflickr.com/65535/48907494097_325701dfce_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907494097_325701dfce.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
-      caption: "End table for Mid-Century Modern"
+      caption: "Coffee table for Mid-Century Modern"
     },
     {
       src: "https://live.staticflickr.com/65535/48906761678_e51e667d7b_b.jpg",
@@ -96,11 +96,32 @@ Product.defaultProps = {
       caption: "Pruna Swift by Virgil James"
     },
     {
-      src: "https://live.staticflickr.com/65535/48907494097_325701dfce_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48907494097_325701dfce.jpg",
+      src: "https://live.staticflickr.com/65535/48907291266_ae5cb5dba3_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907291266_ae5cb5dba3.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
-      caption: "Coffee Table for Mid-Century Modern"
+      caption: "End table for Mid-Century Modern"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48950932941_b283ce2ab5_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48950932941_b283ce2ab5.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Malin + Goetz lip moisturizer"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48951132832_65586b99ed_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48951132832_65586b99ed.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "NIA 24 Physical Cleansing"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48950388358_71d551e4b7_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48950388358_71d551e4b7.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "EAU THERMALE Avéne"
     },
     {
       src: "https://live.staticflickr.com/65535/48906762313_492bec1fc1_b.jpg",
@@ -178,6 +199,55 @@ Product.defaultProps = {
       thumbnailWidth: 500,
       thumbnailHeight: 400,
       caption: "Nero Script by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48948872248_3b14e50340_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48948872248_3b14e50340.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Engineered luxury by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907497857_ee93b2fa7f_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907497857_ee93b2fa7f.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Reykjavik Zipper by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907295661_bd5fa96fc7_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907295661_bd5fa96fc7.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Buenos Aires Zipper by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907296216_0a17ce90fa_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907296216_0a17ce90fa.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Santa Fe Zipper by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907496407_c661d5a684_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907496407_c661d5a684.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Naturale Spring by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907496017_5e116daae0_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907496017_5e116daae0.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Naturale Shapes by Virgil James"
+    },
+    {
+      src: "https://live.staticflickr.com/65535/48907293646_336dd61d15_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907293646_336dd61d15.jpg",
+      thumbnailWidth: 500,
+      thumbnailHeight: 333,
+      caption: "Nero Ghost by Virgil James"
     }
   ]
 };

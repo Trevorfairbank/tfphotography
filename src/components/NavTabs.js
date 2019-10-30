@@ -1,48 +1,37 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import { UncontrolledCollapse, Button, Nav, NavItem } from 'reactstrap';
 import "./NavTabsStyle.css";
 
 function NavTabs(props) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-pills">
       <li className="nav-item">
         <Link to="/" onClick={() => props.handlePageChange("Home")} className="nav-link">
           HOME
         </Link>
       </li>
-      <li className="nav-item">
-        <Link to="/product" onClick={() => props.handlePageChange("Product")} className="nav-link">
-          PRODUCT
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/portrait" onClick={() => props.handlePageChange("Portait")} className="nav-link">
-          PORTRAIT
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/food" onClick={() => props.handlePageChange("Food")} className="nav-link">
-          FOOD
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/wildlife" onClick={() => props.handlePageChange("Wildlife")} className="nav-link">
-          WILDLIFE
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/landscape" onClick={() => props.handlePageChange("Landscape")} className="nav-link">
-          LANDSCAPE
-        </Link>
-      </li>
+      <div>
+    <Button id="toggler" style={{ marginBottom: '1rem'}}>
+      PHOTOGRAPHY
+    </Button>
+    <UncontrolledCollapse toggler="#toggler">
+    <Nav pills>
+      <div>
+        <NavItem>
+          <Link className="nav-item-2" to="/product" onClick={() => props.handlePageChange("Product")} active>PRODUCT</Link>
+          <Link className="nav-item-2" to="/portrait" onClick={() => props.handlePageChange("Portrait")} active>PORTRAIT</Link>
+          <Link className="nav-item-2" to="/food" onClick={() => props.handlePageChange("Food")} active>FOOD</Link>
+          <Link className="nav-item-2" to="/wildlife" onClick={() => props.handlePageChange("Wildlife")} active>WILDLIFE</Link>
+          <Link className="nav-item-2" to="/landscape" onClick={() => props.handlePageChange("Landscape")} active>LANDSCAPE</Link>
+        </NavItem>
+      </div>
+    </Nav>
+    </UncontrolledCollapse>
+  </div>
       <li className="nav-item">
         <Link to="/projects" onClick={() => props.handlePageChange("Projects")} className="nav-link">
           PROJECTS
-        </Link>
-      </li>
-      <li className="nav-item">
-        <Link to="/instagram" onClick={() => props.handlePageChange("Instagram")} className="nav-link">
-          INSTAGRAM
         </Link>
       </li>
       <li className="nav-item">

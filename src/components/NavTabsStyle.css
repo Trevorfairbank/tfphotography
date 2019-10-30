@@ -8,3 +8,41 @@
 .nav-link:hover {
     color: rgb(29, 26, 23);
 }
+
+.nav-tabs .nav-link {
+    border: none;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+  }
+
+.nav-item-2 {
+    display:block;
+    font-size:16px;
+    margin-left:12px;
+    margin-top:-2px;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+    color:darkgrey;
+}
+.nav-item-2:hover {
+    color:rgb(29, 26, 23);
+}
+
+#toggler {
+    background-color: transparent;
+    border: none;
+    color: gray;
+    font-size: 20px;
+    margin-top:2px;
+    padding-bottom:0rem;
+    font-family: Apple SD Gothic Neo;
+    font-weight: bold;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    box-shadow:none;
+}
+
+#toggler:hover {
+    color: rgb(29, 26, 23);
+}
+
