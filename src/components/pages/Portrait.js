@@ -12,6 +12,7 @@ class Portrait extends React.Component {
     };
   }
 
+
   render() {
     return (
       <div style={{

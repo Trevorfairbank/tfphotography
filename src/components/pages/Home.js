@@ -1,6 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Gallery from '../../Gallery.js';
+import { Link } from "react-router-dom";
+import { CardGroup, Card, CardImg} from 'reactstrap';
+import productPhoto from '../images/20180918_small.jpeg'
+import portraitPhoto from '../images/IMG_0660_small.jpg'
+import foodPhoto from '../images/IMG_2390_small.jpg'
+import wildlifePhoto from '../images/IMG_7691_small.jpg'
+import landscapePhoto from '../images/PeggysCove_small.jpg'
+import Panorama from "../images/HawaiiUntouched.jpg"
+import './Home.css'
 
 
 class Home extends React.Component {
@@ -12,6 +20,10 @@ class Home extends React.Component {
         };
     }
 
+    handlePageChange = page => {
+        this.setState({ currentPage: page });
+    };
+
     render() {
         return (
             <div style={{
@@ -22,10 +34,30 @@ class Home extends React.Component {
                 overflow: "auto",
                 padding: "20px"
             }}>
-                <Gallery
-                    images={this.state.images}
-                    enableImageSelection={false} />
-            </div>
+                <img style={{ marginLeft: "-20px", marginTop: "-10px" }} width="1800px" height="450px" src={Panorama} alt="Hawaii Panorama" />
+                <CardGroup style={{ overflow: "auto", minHeight: "1px" }}>
+                    <Card style={{ padding: "20px", width: "60vh", border: "0px" }}>
+                        <CardImg style={{ height: "300px", width: "250px" }} width="100%" src={productPhoto} alt="Card image cap" />
+                        <Link to={"/product"} onClick={() => this.handlePageChange("Product")} style={{ color: "gray", fontSize: "20px", width: "50%", marginLeft: "75px" }}>PRODUCT</Link>
+                    </Card>
+                    <Card style={{ padding: "20px", width: "60vh", border: "0px" }}>
+                        <CardImg style={{ height: "300px", width: "250px" }} width="100%" src={portraitPhoto} alt="Card image cap" />
+                        <Link to={"/portrait"} onClick={() => this.handlePageChange("Portrait")} style={{ color: "gray", fontSize: "20px", width: "50%", marginLeft: "80px" }}>PORTRAIT</Link>
+                    </Card>
+                    <Card style={{ padding: "20px", width: "60vh", border: "0px" }}>
+                        <CardImg style={{ height: "300px", width: "250px" }} width="100%" src={foodPhoto} alt="Card image cap" />
+                        <Link to={"/food"} onClick={() => this.handlePageChange("Food")} style={{ color: "gray", fontSize: "20px", width: "50%", marginLeft: "100px" }}>FOOD</Link>
+                    </Card>
+                    <Card style={{ padding: "20px", width: "60vh", border: "0px" }}>
+                        <CardImg style={{ height: "300px", width: "250px" }} width="100%" src={wildlifePhoto} alt="Card image cap" />
+                        <Link to={"/wildlife"} onClick={() => this.handlePageChange("Wildlife")} style={{ color: "gray", fontSize: "20px", width: "50%", marginLeft: "80px" }}>WILDLIFE</Link>
+                    </Card>
+                    <Card style={{ padding: "20px", width: "60vh", border: "0px" }}>
+                        <CardImg style={{ height: "300px", width: "250px" }} width="100%" src={landscapePhoto} alt="Card image cap" />
+                        <Link to={"/landscape"} onClick={() => this.handlePageChange("Landscape")} style={{ color: "gray", fontSize: "20px", width: "50%", marginLeft: "80px" }}>LANDSCAPE</Link>
+                    </Card>
+                </CardGroup>
+            </div >
         );
     }
 }
