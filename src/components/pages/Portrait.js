@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from '../../Gallery.js';
+import {Jumbotron, Container} from 'reactstrap';
 
 
 class Portrait extends React.Component {
@@ -23,6 +24,12 @@ class Portrait extends React.Component {
         overflow: "auto",
         padding: "20px"
       }}>
+        <Jumbotron className="transparent" fluid>
+          <Container fluid>
+            <h1 className="text-center">PORTRAITS</h1>
+            <p className="text-center">We are all Beautiful People</p>
+          </Container>
+        </Jumbotron>
         <Gallery
           images={this.state.images}
           enableImageSelection={false} />
@@ -75,7 +82,7 @@ Portrait.defaultProps = {
       thumbnailHeight: 333,
       caption: "Sarah"
     },
-     {
+    {
       src: "https://live.staticflickr.com/65535/48907281596_44e570aff6_b.jpg",
       thumbnail: "https://live.staticflickr.com/65535/48907281596_44e570aff6.jpg",
       thumbnailWidth: 400,

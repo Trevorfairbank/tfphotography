@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from '../../Gallery.js';
+import {Jumbotron, Container} from 'reactstrap';
 
 
 class Wildlife extends React.Component {
@@ -22,6 +23,12 @@ class Wildlife extends React.Component {
         overflow: "auto",
         padding: "20px"
       }}>
+        <Jumbotron className="transparent" fluid>
+        <Container fluid>
+          <h1 className="text-center">WILDLIFE</h1>
+          <p className="text-center">Focus on their eyes</p>
+        </Container>
+      </Jumbotron>
         <Gallery
           images={this.state.images}
           enableImageSelection={false} />

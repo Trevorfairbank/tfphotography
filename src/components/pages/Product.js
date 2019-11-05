@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from '../../Gallery.js';
+import {Jumbotron, Container} from 'reactstrap';
+import "../pages/Product.css";
 
 
 class Product extends React.Component {
@@ -22,6 +24,12 @@ class Product extends React.Component {
         overflow: "auto",
         padding: "20px"
       }}>
+      <Jumbotron className="transparent" fluid>
+        <Container fluid>
+          <h1 className="text-center">PRODUCTS</h1>
+          <p className="text-center">The tiny details are what matter most.</p>
+        </Container>
+      </Jumbotron>
         <Gallery
           images={this.state.images}
           enableImageSelection={false} />
@@ -55,24 +63,24 @@ Product.defaultProps = {
     },
     {
       src: "https://live.staticflickr.com/65535/48906761338_28d2c44235_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48906761338_28d2c44235.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48906761338_28d2c44235_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
       caption: "Isolated Pruna by Virgil James"
     },
     {
       src: "https://live.staticflickr.com/65535/48907292161_2e569c85e6_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48907292161_2e569c85e6.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907292161_2e569c85e6_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 312,
       caption: "Isolated Naturale by Virgil James"
     },
     {
       src: "https://live.staticflickr.com/65535/48906761968_74fcc545b7_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48906761968_74fcc545b7.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48906761968_74fcc545b7_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 313,
-      caption: "Isolated Naturale by Virgil James"
+      caption: "Isolated Nero by Virgil James"
     },
      {
       src: "https://live.staticflickr.com/65535/48907291861_f9b3055d1c_b.jpg",
@@ -103,22 +111,22 @@ Product.defaultProps = {
       caption: "End table for Mid-Century Modern"
     },
     {
-      src: "https://live.staticflickr.com/65535/48950932941_b283ce2ab5_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48950932941_b283ce2ab5.jpg",
+      src: "https://live.staticflickr.com/65535/48950933806_ba6e91efe5_b.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48950933806_ba6e91efe5_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
-      caption: "Malin + Goetz lip moisturizer"
+      caption: "ideal complex eye gel"
     },
     {
       src: "https://live.staticflickr.com/65535/48951132832_65586b99ed_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48951132832_65586b99ed.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48951132832_65586b99ed_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
       caption: "NIA 24 Physical Cleansing"
     },
     {
       src: "https://live.staticflickr.com/65535/48950388358_71d551e4b7_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48950388358_71d551e4b7.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48950388358_71d551e4b7_c.jpg",
       thumbnailWidth: 500,
       thumbnailHeight: 333,
       caption: "EAU THERMALE Avéne"

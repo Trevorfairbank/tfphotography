@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from '../../Gallery.js';
+import {Jumbotron, Container} from 'reactstrap';
 
 
 class Landscape extends React.Component {
@@ -22,6 +23,12 @@ class Landscape extends React.Component {
         overflow: "auto",
         padding: "20px"
       }}>
+        <Jumbotron className="transparent" fluid>
+          <Container fluid>
+            <h1 className="text-center">LANDSCAPE</h1>
+            <p className="text-center">Scenic views around the world</p>
+          </Container>
+        </Jumbotron>
         <Gallery
           images={this.state.images}
           enableImageSelection={false} />
@@ -110,8 +117,8 @@ Landscape.defaultProps = {
       caption: "Kings Canyon National Park"
     },
     {
-      src: "https://live.staticflickr.com/65535/48907304886_7e6c2e2e6b_b.jpg",
-      thumbnail: "https://live.staticflickr.com/65535/48907304886_7e6c2e2e6b_c.jpg",
+      src: "https://live.staticflickr.com/65535/48907304886_d5cff4452a_h.jpg",
+      thumbnail: "https://live.staticflickr.com/65535/48907304886_d5cff4452a_h.jpg",
       thumbnailWidth: 800,
       thumbnailHeight: 286,
       caption: "Marataba Panorama"
@@ -123,7 +130,7 @@ Landscape.defaultProps = {
       thumbnailHeight: 333,
       caption: "Garrapata State Park"
     },
-        {
+    {
       src: "https://live.staticflickr.com/65535/48949310533_0cbe4ef9e5_b.jpg",
       thumbnail: "https://live.staticflickr.com/65535/48949310533_0cbe4ef9e5.jpg",
       thumbnailWidth: 400,
