@@ -1,0 +1,13 @@
+.center {
+    align-content: center !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+}
+
+.profile {
+    padding:10px;
+    margin-left: 88px;
+    width:250px;
+    height:300px;
+    
+}

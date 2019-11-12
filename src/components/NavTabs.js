@@ -29,11 +29,11 @@ function NavTabs(props) {
     </Nav>
     </UncontrolledCollapse>
   </div>
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <Link to="/projects" onClick={() => props.handlePageChange("Projects")} className="nav-link">
           PROJECTS
         </Link>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link to="/about" onClick={() => props.handlePageChange("About")} className="nav-link">
           ABOUT

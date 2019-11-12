@@ -7,7 +7,7 @@ import Portrait from "./pages/Portrait";
 import Food from "./pages/Food";
 import Wildlife from "./pages/Wildlife";
 import Landscape from "./pages/Landscape";
-import Projects from "./pages/Projects";
+// import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
@@ -43,7 +43,7 @@ class Portfolio extends Component {
         <Route exact path="/food" component={Food} />
         <Route exact path="/wildlife" component={Wildlife} />
         <Route exact path="/landscape" component={Landscape} />
-        <Route exact path="/projects" component={Projects} />
+        {/* <Route exact path="/projects" component={Projects} /> */}
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
       </div>
